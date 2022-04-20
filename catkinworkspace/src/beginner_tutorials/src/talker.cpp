@@ -1,6 +1,5 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
-
 #include <sstream>
 
 
@@ -16,10 +15,10 @@ int main(int argc, char **argv)
     std_msgs::String msg;
     std::stringstream ss;
     std::string message="team abhiyaan rocks";
-    ss <<message;
+    ss <<message;//passing the message to string stream
     msg.data = ss.str();
     ROS_INFO("%s", msg.data.c_str());
-    chatter_pub.publish(msg);
+    chatter_pub.publish(msg);//publishing the message
     ros::spinOnce();
     loop_rate.sleep();
   }

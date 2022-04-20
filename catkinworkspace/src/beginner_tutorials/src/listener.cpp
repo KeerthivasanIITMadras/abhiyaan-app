@@ -4,7 +4,7 @@
 
 void chatterCallback(const std_msgs::String::ConstPtr& msg)
 {
-  ROS_INFO("%s",msg->data.c_str());
+  ROS_INFO("%s",msg->data.c_str());//printing the received message from the publisher in the terminal
 }
 
 int main(int argc, char **argv)
