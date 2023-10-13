@@ -1,5 +1,5 @@
 # abhiyaan-app
-    Submission for Team Abhiyaan
+    Submission for selection into Team Abhiyaan
  =====================================
 
 Name:
